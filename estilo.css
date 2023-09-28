@@ -12,23 +12,23 @@ body{
     --primary-color: #020726
 }
 
-.header-nav{
+.header_nav{
     display: none;
 }
 
-.header-img{
+.header_img{
     /* background-image: radial-gradient(#051A59, var(--primary-color)); */
     display: flex;
     justify-content: center;
 }
-.header-img img{
+.header_img img{
     width: 10rem;
     margin: auto;
 
 }
 
 
-.header-nav a{
+.header_nav a{
     display: block;
     text-align: center;
     text-decoration: none;
@@ -38,7 +38,7 @@ body{
 
 }
 
-.header-nav a:hover{
+.header_nav a:hover{
     background-color: color-mix(in srgb, white 10%, var(--primary-color) 90%);
 }
 
@@ -64,20 +64,20 @@ body{
     font-size: 2em;
 }
 
-.header-nav.show {
+.header_nav.show {
     display: block;
 }
 
-.main-section{
+.main_section{
     height: 100vh;
     background-image: url(/img/fundo.jpg);
     background-size: cover;
-    background-position: -170px;
+    background-position: -10rem;
     background-repeat: no-repeat;
 }
 
 
-.btn-style{
+.btn_style{
     display: grid;
     place-items: center;
     height: 80vh;
@@ -111,7 +111,7 @@ footer{
 
     }
 
-    .header-nav{
+    .header_nav{
         display: flex;
         gap: 2rem;
         justify-content: end;
@@ -126,26 +126,26 @@ footer{
         align-items: center;
     }
 
-    .header-nav a{
+    .header_nav a{
         border-radius: 5px;
         border: 1px solid white;
         padding: 0.7rem;
         margin: 0;
     }
 
-    .main-section{
+    .main_section{
         background-size: cover;
     }
     
 }
 
 @media screen and (min-width: 1024px){
-    .main-section{
+    .main_section{
         background-size: cover;
-        background-position: center;
+        background-position:  center 0.0001rem;
     }
 
-    .btn-style{
+    .btn_style{
         font-size: 20rem;
     }
 }

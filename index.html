@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,14 +19,14 @@
 <body>
     <header class="color header">
 
-        <div class="header-img">
+        <div class="header_img">
             <img src="/img/logo.png" alt="Logo Blue Beetle">
         </div>
 
         <div>
             <span id="hamburguer" class="material-symbols-rounded">menu</span>
 
-            <nav id="itens_menu" class="header-nav">
+            <nav id="itens_menu" class="header_nav">
                 
                     <a href="#">Menu 01</a>
                     <a href="#">Menu 02</a>
@@ -38,8 +38,8 @@
     </header>
 
     <main>
-        <section class="main-section">
-            <div class="btn-style">
+        <section class="main_section">
+            <div class="btn_style">
                 <a class="btn btn-primary btn-lg" href="/carousel.html" role="button" target="_blank">Galeria</a>
             </div>       
         </section>
@@ -48,6 +48,24 @@
     <footer>
         ♥Elas na tech♥ 
     </footer>
+
+    <script>
+        var hamburguer = document.getElementById('hamburguer');
+        var itens_menu = document.getElementById('itens_menu');
+
+
+        hamburguer.addEventListener('click', aparecer);
+
+
+        function aparecer() {
+            if (itens_menu.style.display == 'block') {
+                itens_menu.classList.remove('show');
+            } else {
+                itens_menu.classList.toggle('show');
+            }
+        }
+
+    </script>
 
     
 </body>
